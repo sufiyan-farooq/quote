@@ -2,7 +2,7 @@
 @import url(https://fonts.googleapis.com/css?family=Josefin+Sans:400,600,700);
 body {
     font: normal 1em 'Josefin Sans';
-    background: url(asstes/light-bg.jpg);
+    background: url(asstes/blue-smooth-wall-textured-background.jpg);
     background-repeat: no-repeat;
     object-fit: cover;
     background-size: cover;
@@ -47,7 +47,7 @@ i.fa.fa-twitter {
     opacity: 1;
     font: bold 18px 'Josefin Sans';
     color: #fff;
-    background-image: linear-gradient(to left top, #d955a4, #b681dc, #86a6f6, #6bc2f7, #81d7eb);
+    background-image: linear-gradient(to left top, #2319a4, #0057cb, #0085dd, #00b0e5, #81d7eb);
     height: 50px;
     line-height: 50px;
     margin-top: 50px;
