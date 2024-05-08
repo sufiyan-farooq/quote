@@ -2,7 +2,7 @@
 @import url(https://fonts.googleapis.com/css?family=Josefin+Sans:400,600,700);
 body {
     font: normal 1em 'Josefin Sans';
-    background: url(asstes/blue-smooth-wall-textured-background.jpg);
+    background: url(asstes/background-image.webp);
     background-repeat: no-repeat;
     object-fit: cover;
     background-size: cover;
