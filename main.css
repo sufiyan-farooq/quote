@@ -2,9 +2,10 @@
 @import url(https://fonts.googleapis.com/css?family=Josefin+Sans:400,600,700);
 body {
     font: normal 1em 'Josefin Sans';
-    background: #4c7fa7;
-    color: #4c7fa7;
-    transition: all 0.8s cubic-bezier(0.44, 1.13, 0.58, 1);
+  background: url(asstes/blue-smooth-wall-textured-background.jpg);
+    background-repeat: no-repeat;
+    object-fit: cover;
+    background-size: cover;
 }
 .quote-box {
     border-radius: 3px;
@@ -13,8 +14,8 @@ body {
 
 margin: 12px auto auto;
     padding: 25px 40px;
-    background-color: #fff;
     overflow: hidden;
+    color: #fff;
 }
 #quote {
     overflow: hidden;

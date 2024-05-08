@@ -6,8 +6,14 @@ async function quote() {
     const apiUrl = "https://api.quotable.io/random";
     const url = await fetch(apiUrl).then(response => response.json());
 
-    quoteText.innerHTML = `<h4>${url.content}</h4>`;
-    authorName.innerHTML = `<h5>${url.author}</h5>`;
+    let speech = new SpeechSynthesisUtterance();
+    speech.text = url.content 
+    window.speechSynthesis.speak(speech)
+
+    quoteText.innerHTML = `<h4>" ${url.content} "</h4>`;
+    authorName.innerHTML = `<h5>_${url.author}</h5>`;
+
+
 
     let author = {
         content: url.content,
@@ -15,7 +21,8 @@ async function quote() {
     };
     arr.push({authorDetail: author});
     localStorage.setItem("author", JSON.stringify(arr));
-}
+ }
+       
 
 function changeQuote() {
     quote();
