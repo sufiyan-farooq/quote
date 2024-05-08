@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="asstes/quotes.png">
+
+    <title>Quotes</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+
+
+    <div class="container">
+        <div class="quote-save">
+       
+        
+
+            
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="quote-save">
+        </div>
+    </div>
+
+    <script>
+        let quoteSave = document.querySelector(".quote-save");
+        let quoteData = JSON.parse(localStorage.getItem("author")) || [];
+
+        for (let i = 0; i < quoteData.length; i++) {
+            quoteSave.innerHTML += `
+            <div class="quote-box">
+                <div class="quote">
+                    <h4>${quoteData[i].authorDetail.content}</h4>
+                </div>
+                <div class="author">
+                    <h5>${quoteData[i].authorDetail.author}</h5>
+                </div>
+                <button class="delete-button" onclick="deleteQuote(${i})">Delete</button>
+            </div>`;
+        }
+
+        function deleteQuote(index) {
+            quoteData.splice(index, 1);
+            localStorage.setItem("author", JSON.stringify(quoteData));
+            location.reload();
+        }
+    </script>
+
+
+
+
+    
+</body>
+</html>
