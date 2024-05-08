@@ -2,15 +2,24 @@
 @import url(https://fonts.googleapis.com/css?family=Josefin+Sans:400,600,700);
 body {
     font: normal 1em 'Josefin Sans';
-  background: url(asstes/blue-smooth-wall-textured-background.jpg);
-    background-repeat: no-repeat;
-    object-fit: cover;
+    background: url(asstes/blue-smooth-wall-textured-background.jpg);
+    
     background-size: cover;
+    background-repeat: no-repeat;
+
 }
 .quote-box {
     border-radius: 3px;
     position: relative;
     width: 50%;
+/* From https://css.glass */
+/* From https://css.glass */
+background: rgba(255, 255, 255, 0.1);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(3.4px);
+-webkit-backdrop-filter: blur(3.4px);
+border: 1px solid rgba(255, 255, 255, 0.15);
 
 margin: 12px auto auto;
     padding: 25px 40px;
